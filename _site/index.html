@@ -1,77 +1,387 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Your awesome title | Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</title>
-<meta name="generator" content="Jekyll v3.10.0" />
-<meta property="og:title" content="Your awesome title" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
-<meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
-<meta property="og:site_name" content="Your awesome title" />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Your awesome title" />
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","headline":"Your awesome title","name":"Your awesome title","url":"http://localhost:4000/"}</script>
-<!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Your awesome title" /></head>
-<body><header class="site-header" role="banner">
-
-  <div class="wrapper"><a class="site-title" rel="author" href="/">Your awesome title</a><nav class="site-nav">
-        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-        <label for="nav-trigger">
-          <span class="menu-icon">
-            <svg viewBox="0 0 18 15" width="18px" height="15px">
-              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
-            </svg>
-          </span>
-        </label>
-
-        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
-      </nav></div>
-</header>
-<main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        <div class="home">
-<h2 class="post-list-heading">Posts</h2>
-    <ul class="post-list"><li><span class="post-meta">Nov 30, 2025</span>
-        <h3>
-          <a class="post-link" href="/jekyll/update/2025/11/30/welcome-to-jekyll.html">
-            Welcome to Jekyll!
-          </a>
-        </h3></li></ul>
-
-    <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p></div>
-
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Xiques - Content Creator & Video Editor Portfolio">
+  <title>Xiques - Content Creator & Video Editor</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="container">
+      <div class="logo">
+        <a href="#" class="logo-text">@ Xiques</a>
       </div>
-    </main><footer class="site-footer h-card">
-  <data class="u-url" href="/"></data>
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">Your awesome title</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">Your awesome title</li><li><a class="u-email" href="mailto:your-email@example.com">your-email@example.com</a></li></ul>
+      <div class="nav-links">
+        <a href="#" data-translate="nav-home">Home</a>
+        <a href="#projects" data-translate="nav-projects">Projects</a>
+        <a href="#skills" data-translate="nav-skills">Skills</a>
+        <a href="#about-me" data-translate="nav-about">About-me</a>
+        <a href="#contacts" data-translate="nav-contacts">Contacts</a>
+        <div class="language-selector" id="language-toggle">
+          <span>EN</span>
+        </div>
       </div>
+    </nav>
+  </header>
 
-      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/jekyll"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">jekyll</span></a></li><li><a href="https://www.twitter.com/jekyllrb"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">jekyllrb</span></a></li></ul>
-</div>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero container">
+      <div class="hero-content">
+        <h1>
+          <span data-translate="hero-title-1">Xiques is </span> 
+          <span class="purple-text" data-translate="hero-title-2">Content Creator</span>
+          <span data-translate="hero-title-3"> and</span><br>
+          <span class="purple-text" data-translate="hero-title-4">Video Editor</span>
+        </h1>
+        <p class="subtitle" data-translate="hero-subtitle">
+          He crafts live stream, Vtubing<br>
+          and creative content
+        </p>
+        <a href="mailto:mail@xiques.xyz" class="btn-primary" data-translate="contact-btn">Contact me!!</a>
+        
+        <div class="currently-working">
+          <div class="dot"></div>
+          <p><span data-translate="currently-working">Currently working on </span><span data-translate="portfolio">Portfolio</span></p>
+        </div>
+      </div>
+      <!-- Hero section dots decoration -->
+      <div class="hero-image">
+        <div class="image-wrapper">
+          <img src="img/Profile_Placeholder.webp" alt="Xiques">
+          <div class="dots-decoration">
+            <!-- 5x5 grid of dots -->
+            <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+            <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+            <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+            <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+            <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+          </div>
+        </div>
+        <div class="square-decoration"></div>
+      </div>
+    </section>
 
-      <div class="footer-col footer-col-3">
-        <p>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</p>
+    <!-- Quote Section -->
+    <section class="quote container">
+      <div class="quote-content">
+        <p data-translate="quote">"With great power comes great electricity bill"</p>
+        <p class="quote-author" data-translate="quote-author">- Dr. WHO</p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects container">
+      <div class="section-header">
+        <h2><span class="purple-text">#</span><span data-translate="projects-title">projects</span></h2>
+        <div class="line"></div>
+      </div>
+      
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-image" style="background-color: #222;">
+            <div class="project-image-content">
+              <h3 class="purple-text" data-translate="project1-title">Minecraft Mod</h3>
+              <p data-translate="project1-subtitle">From the Fog</p>
+            </div>
+          </div>
+          <div class="project-info">
+            <p class="project-tech" data-translate="project1-tech">Translation Minecraft Java</p>
+            <h3 data-translate="project1-name">Translating Minecraft Mod</h3>
+            <p class="project-description" data-translate="project1-desc">From the Fog</p>
+            <div class="project-links">
+              <a href="https://lunareclipse.studio/creations/from-the-fog#:~:text=Polish%2C%20Upsidedown%2C%20%26%20Shakespearean-,Xiques_L,-Thai%20Translator" class="btn-small" target="_blank" rel="noopener noreferrer" data-translate="live-btn">Live &lt;~&gt;</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-image" style="background-color: #222;">
+            <div class="project-image-content">
+              <h3 class="green-text" data-translate="project2-title">Content Creation</h3>
+              <p data-translate="project2-subtitle">Video and Live Streams</p>
+            </div>
+          </div>
+          <div class="project-info">
+            <p class="project-tech" data-translate="project2-tech">YouTube Twitch-</p>
+            <h3 data-translate="project2-name">Video Content & Live Streams</h3>
+            <p class="project-description" data-translate="project2-desc">Distributed on various platforms</p>
+            <div class="project-links">
+              <a href="https://www.youtube.com/@Xiques_L/streams" class="btn-small" target="_blank" rel="noopener noreferrer" data-translate="live-btn">Live &lt;~&gt;</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-image" style="background-color: #222;">
+            <div class="project-image-content">
+              <h3 class="orange-text" data-translate="project3-title">Vtuber</h3>
+              <p data-translate="project3-subtitle">Online Identity Creation</p>
+            </div>
+          </div>
+          <div class="project-info">
+            <p class="project-tech" data-translate="project3-tech">VTubing 3D Modeling Content Creation</p>
+            <h3 data-translate="project3-name">Online Identity Creation</h3>
+            <p class="project-description" data-translate="project3-desc">Project through Vtuber</p>
+            <div class="project-links">
+              <a href="https://www.youtube.com/@Xiques_L" class="btn-small" target="_blank" rel="noopener noreferrer" data-translate="live-btn">Live &lt;~&gt;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Small Projects Section -->
+    <section id="small-projects" class="small-projects container">
+      <div class="section-header">
+        <h2><span class="purple-text">#</span><span data-translate="small-projects-title">small-projects</span></h2>
+        <div class="line"></div>
+      </div>
+      
+      <div class="small-projects-grid">
+        <!-- Small Project 1 -->
+        <div class="small-project-card">
+          <h3 data-translate="small-project1-title">Content Ideation</h3>
+          <p data-translate="small-project1-desc">Thinking and developing content ideas to generate interest among viewers</p>
+        </div>
+        
+        <!-- Small Project 2 -->
+        <div class="small-project-card">
+          <h3 data-translate="small-project2-title">Vertical Videos</h3>
+          <p data-translate="small-project2-desc">Making Vertical videos on various platforms</p>
+        </div>
+        
+        <!-- Small Project 3 -->
+        <div class="small-project-card">
+          <h3 data-translate="small-project3-title">Personal Website</h3>
+          <p data-translate="small-project3-desc">Making website that contain all my personal use</p>
+        </div>
+        
+        <!-- Small Project 4 -->
+        <div class="small-project-card">
+          <h3 data-translate="small-project4-title">Minecraft Server</h3>
+          <p data-translate="small-project4-desc">Hosting and maintaining Minecraft server</p>
+        </div>
+        
+        <!-- Small Project 5 -->
+        <div class="small-project-card">
+          <h3 data-translate="small-project5-title">Minecraft Plugins</h3>
+          <p data-translate="small-project5-desc">Writing Minecraft plugins for server</p>
+        </div>
+        
+        <!-- Small Project 6 -->
+        <div class="small-project-card">
+          <h3 data-translate="small-project6-title">Foundry VTT Modules</h3>
+          <p data-translate="small-project6-desc">Making Foundry VTT modules for Online TRPG sessions</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills container">
+      <div class="section-header">
+        <h2><span class="purple-text">#</span><span data-translate="skills-title">skills</span></h2>
+        <div class="line"></div>
+      </div>
+      
+      <div class="skills-content">
+        <!-- Skills section dots grid -->
+        <div class="skills-decoration">
+          <div class="dots-grid">
+            <!-- 5x5 grid of dots -->
+            <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+            <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+            <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+            <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+            <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+          </div>
+          <div class="square-decoration"></div>
+          <div class="square-decoration purple"></div>
+        </div>
+        
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3 data-translate="skill1-title">Content</h3>
+            <p data-translate="skill1-desc1">Content Design | Planning</p>
+            <p data-translate="skill1-desc2">Vtuber Management</p>
+          </div>
+          
+          <div class="skill-card">
+            <h3 data-translate="skill2-title">Technical</h3>
+            <p data-translate="skill2-desc1">Video Editing | OBS Studio</p>
+            <p data-translate="skill2-desc2">Photo/Video Production</p>
+          </div>
+          
+          <div class="skill-card">
+            <h3 data-translate="skill3-title">Communication</h3>
+            <p data-translate="skill3-desc1">Translation (Thai-English)</p>
+            <p data-translate="skill3-desc2">Community Management</p>
+          </div>
+          
+          <div class="skill-card">
+            <h3 data-translate="skill4-title">Software</h3>
+            <p data-translate="skill4-desc1">Microsoft Office</p>
+            <p data-translate="skill4-desc2">Google Workspace</p>
+          </div>
+          
+          <div class="skill-card wide">
+            <h3 data-translate="skill5-title">Other</h3>
+            <p data-translate="skill5-desc">Content Strategy | Target Audience Analysis | Platform-specific Content Creation</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fun Facts Section -->
+    <section id="fun-facts" class="fun-facts container">
+      <div class="section-header">
+        <h2><span class="purple-text">#</span><span data-translate="fun-facts-title">my-fun-facts</span></h2>
+        <div class="line"></div>
+      </div>
+      
+      <div class="fun-facts-content">
+        <div class="fun-facts-list">
+          <div class="fact-card">
+            <p data-translate="fact1">I've been a Vtuber for over four years and love developing new content ideas.</p>
+          </div>
+          <div class="fact-card">
+            <p data-translate="fact2">I've fine-tuned OBS Studio settings so much that I could probably do it blindfolded.</p>
+          </div>
+          <div class="fact-card">
+            <p data-translate="fact3">My ideal gaming setup always includes immersive storytelling elements.</p>
+          </div>
+          <div class="fact-card">
+            <p data-translate="fact4">I love tabletop RPGs, especially ones where I can craft entire worlds.</p>
+          </div>
+          <div class="fact-card">
+            <p data-translate="fact5">I once spent 40 hours building the perfect virtual world in Foundry VTT.</p>
+          </div>
+        </div>
+        
+        <!-- Fun facts section dots grid -->
+        <div class="fun-facts-decoration">
+          <div class="dots-grid">
+            <!-- 5x5 grid of dots -->
+            <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+            <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+            <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+            <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+            <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+          </div>
+          <div class="square-decoration purple"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about-me" class="about-me container">
+      <div class="section-header">
+        <h2><span class="purple-text">#</span><span data-translate="about-title">about-me</span></h2>
+        <div class="line"></div>
+      </div>
+      
+      <div class="about-me-content">
+        <div class="about-me-text">
+          <p class="greeting" data-translate="greeting">Hello, I'm Xiques!</p>
+          <p data-translate="about-p1">
+            I'm a passionate <b>content creator, translator, and digital storyteller</b> with a deep-rooted love for gaming and immersive experiences. From translating <i>Minecraft Mod: From the Fog</i> to crafting engaging Vtuber content, I thrive at blending creativity with technical expertise.
+          </p>
+          <p data-translate="about-p2">
+            With <b>over five years of experience in streaming and video editing</b>, I have mastered the use of <b>OBS Studio and digital media tools</b> to create high-quality content. My journey has led me to explore <b>game localization, server hosting, and community building</b>, shaping interactive worlds that captivate audiences.
+          </p>
+          <p data-translate="about-p3">
+            I'm always looking to expand my skills, whether through <b>networking innovations, content strategy, or storytelling techniques</b>. My goal is to craft impactful digital experiences—whether for myself or collaborating with others.
+          </p>
+        </div>
+        
+        <!-- About me section dots decoration -->
+        <div class="about-me-image">
+          <img src="img/200x300.webp" alt="Xiques">
+          <div class="dots-decoration">
+            <!-- 5x5 grid of dots -->
+            <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+            <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+            <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+            <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+            <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacts Section -->
+    <section id="contacts" class="contacts container">
+      <div class="section-header">
+        <h2><span class="purple-text">#</span><span data-translate="contacts-title">contacts</span></h2>
+        <div class="line"></div>
+      </div>
+      
+      <div class="contacts-content">
+        <div class="contacts-text">
+          <p data-translate="contacts-text">
+            I'm interested in freelance opportunities, however, if you have other request or question, don't hesitate to contact me.
+          </p>
+        </div>
+        
+        <div class="contacts-info">
+          <h3 data-translate="message-me">Message me here</h3>
+          <div class="contact-links">
+            <a href="mailto:mail@xiques.xyz" class="contact-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <span>mail@xiques.xyz</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Back to top button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 15-6-6-6 6"/></svg>
+  </button>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span>@ Xiques</span>
+          <p data-translate="footer-role">Content Creator & Video Editor</p>
+        </div>
+        
+        <div class="footer-copyright">
+          <p>&copy; <span id="year"></span> Xiques. All Rights Reserved.</p>
+        </div>
+        
+        <div class="footer-media">
+          <h3 data-translate="footer-media">Media</h3>
+          <div class="social-links">
+            <a href="https://github.com/Xiques-L" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <img src="footer-icon/Github.webp" alt="GitHub" class="footer-icon">
+            </a>
+            <a href="https://x.com/Xiques_L" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="X">
+              <img src="footer-icon/X.webp" alt="X" class="footer-icon">
+            </a>
+            <a href="https://bsky.app/profile/bsky.xiques.xyz" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Bluesky">
+              <img src="footer-icon/Bsky.webp" alt="Bluesky" class="footer-icon">
+            </a>
+          </div>
+        </div>
       </div>
     </div>
+  </footer>
 
-  </div>
-
-</footer>
+  <script src="script.js"></script>
 </body>
-
 </html>
